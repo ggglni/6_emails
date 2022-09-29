@@ -15,7 +15,7 @@ while True: #an email every 30 seconds
     now = dt.now()
     print(now)
     if (now.hour == 10 and now.minute == 53):
-        yag = yagmail.SMTP(user=sender, password='ybhztkldfrckmklu')
+        yag = yagmail.SMTP(user=sender, password='xxxxxxxxxx')
         subject = subject + str(i)
         yag.send(to=receiver, subject=subject, contents=contents)
         print('email sent '+str(i))
