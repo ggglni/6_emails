@@ -5,17 +5,17 @@ from datetime import datetime as dt
 sender = 'ggglnix@gmail.com'
 receiver = 'bianco.cinzia@yahoo.it'
 subject = 'automated email'
-contents = """
+contents = ["""
 Here is the content of the email!
 Ciao!
-"""
+""", 'filex.txt']
 i = 0
 
 while True: #an email every 60 seconds
     now = dt.now()
     print(now)
     if (now.hour == 10 and now.minute == 53): #only if time is 10:53 - once a day
-        yag = yagmail.SMTP(user=sender, password='xxxxxxxxxx')
+        yag = yagmail.SMTP(user=sender, password='nxexxenxdrfiznpc')
         subject = subject + str(i)
         yag.send(to=receiver, subject=subject, contents=contents)
         print('email sent '+str(i))
