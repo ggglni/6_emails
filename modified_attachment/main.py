@@ -5,7 +5,7 @@ import os
 sender = 'ggglnix@gmail.com' 
 subject = 'Bill from Giorgio'
 
-yag = yagmail.SMTP(user=sender, password='nxexxenxdrfiznpc')
+yag = yagmail.SMTP(user=sender, password='xxx')
 
 df = pandas.read_csv('monthly_customers.csv')
 
