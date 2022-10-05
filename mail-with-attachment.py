@@ -9,7 +9,7 @@ Here is the content of the email!
 Ciao!
 """, 'filex.txt']
 
-yag = yagmail.SMTP(user=sender, password='nxexxenxdrfiznpc')
+yag = yagmail.SMTP(user=sender, password='xxxx')
 
 yag.send(to=receiver, subject=subject, contents=contents)
 
